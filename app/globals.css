@@ -63,6 +63,7 @@ hr {
 }
 
 .moon:hover {
+  transform: scale(1.5);
   color: aliceblue;
 }
 
