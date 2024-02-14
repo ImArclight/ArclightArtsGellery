@@ -1,9 +1,11 @@
 import React from 'react'
+import ImgContainer from '../component/ImgContainer'
 
 export default function ArtsGallery() {
   return (
     <div>
-      AAAA
+      <ImgContainer />
+      <br />
     </div>
   )
 }

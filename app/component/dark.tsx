@@ -10,4 +10,4 @@ export default function Dark({children}: {children: React.ReactNode}) {
         {children}
     </ThemeProvider>
   )
-}
+} 

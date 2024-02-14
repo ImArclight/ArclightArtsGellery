@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import SwitchTheme from './SwitchTheme'
 
-
-export default function Navbar() {
+ 
+export default function Navbar() {  
   return (
     <div>
       <nav className="bg-gray-900">
@@ -21,32 +21,33 @@ export default function Navbar() {
                 </svg>
               </button>
             </div>
+
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <ul className="flex space-x-4">
 
-                  <li className="bg-gray-600 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">
-                    <Link href={'./'}>
+                  <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" >
+                    <Link href={'/'}>
                       Home
                     </Link>
                   </li>
 
                   <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                    <Link href={'./ArtsGallery'}>
+                    <Link href={'./artsgallery'}>
                       Arts Gallery
                     </Link>
                   </li>
 
                   <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                    <Link href={'./Projects'}>
+                    <Link href={'/projects'}>
                       Projects
                     </Link>
                   </li>
 
                     <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                      <Link href={'./Others'}>
+                      <Link href={'/others'}>
                         Others
                       </Link>
                     </li>
@@ -58,13 +59,21 @@ export default function Navbar() {
             </div>
           </div>
         </div>   
+        
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
-          
-            <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Arts Gallery</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Others</a>
+            <Link href={'/'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+              Home
+            </Link>
+            <Link href={'/artsgallery'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+              Arts Gallery
+            </Link>
+            <Link href={'/Projects'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+              Projects
+            </Link>
+            <Link href={'/Others'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+              Others
+            </Link>
           </div>
         </div>     
       </nav>
