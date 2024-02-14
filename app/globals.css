@@ -63,11 +63,19 @@ hr {
 }
 
 .moon:hover {
-  transform: scale(1.5);
   color: aliceblue;
   transform: scale(1.5);
 }
 
 .sun:hover {
   transform: scale(1.5);
+}
+
+.desc {
+  text-align: center;
+}
+
+.socIcon {
+  margin: auto;
+  text-align: center;
 }
