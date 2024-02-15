@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import SwitchTheme from './SwitchTheme'
+import router, { useRouter } from 'next/router'
 
  
 export default function Navbar() {  
@@ -29,7 +30,7 @@ export default function Navbar() {
                 <ul className="flex space-x-4">
 
                   <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" >
-                    <Link href={'/'}>
+                    <Link onClick={router.back} href={'/'}>
                       Home
                     </Link>
                   </li>
@@ -62,7 +63,7 @@ export default function Navbar() {
         
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
-            <Link href={'/'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+            <Link onClick={router.back} href={'/'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
               Home
             </Link>
             <Link href={'/artsgallery'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
