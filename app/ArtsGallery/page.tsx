@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgContainer from '../component/ImgContainer'
+import ImgContainer from './ImgContainer'
 
 export default function ArtsGallery() {
   return (
@@ -7,5 +7,5 @@ export default function ArtsGallery() {
       <ImgContainer />
       <br />
     </div>
-  )
+  ) 
 }

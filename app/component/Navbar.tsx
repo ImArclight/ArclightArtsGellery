@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import SwitchTheme from './SwitchTheme'
-import router, { useRouter } from 'next/router'
 
+ 
  
 export default function Navbar() {  
   return (
@@ -30,25 +30,25 @@ export default function Navbar() {
                 <ul className="flex space-x-4">
 
                   <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" >
-                    <Link onClick={router.back} href={'/'}>
+                    <Link href={'/'}>
                       Home
                     </Link>
                   </li>
 
                   <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                    <Link href={'./artsgallery'}>
+                    <Link href={'/ArtsGallery'}>
                       Arts Gallery
                     </Link>
                   </li>
 
                   <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                    <Link href={'/projects'}>
+                    <Link href={'/Projects'}>
                       Projects
                     </Link>
                   </li>
 
                     <li className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                      <Link href={'/others'}>
+                      <Link href={'/Others'}>
                         Others
                       </Link>
                     </li>
@@ -63,16 +63,16 @@ export default function Navbar() {
         
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
-            <Link onClick={router.back} href={'/'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+            <Link href={'/'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
               Home
             </Link>
-            <Link href={'/artsgallery'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+            <Link href={''} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
               Arts Gallery
             </Link>
-            <Link href={'/Projects'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+            <Link href={''} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
               Projects
             </Link>
-            <Link href={'/Others'} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+            <Link href={''} className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
               Others
             </Link>
           </div>

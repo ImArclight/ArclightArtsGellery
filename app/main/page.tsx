@@ -27,7 +27,7 @@ export default function Main() {
         <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-600 to-transparent opacity-25 dark:opacity-100"/>
         <br />
         <div className='desc'>
-          <p>I'm a self-learning person that interested in 
+          <p>Im a self-learning person that interested in 
             <span className='text-green-500 mx-1 text-1xl relative inline-block stroke-current'>
               something
             </span> 

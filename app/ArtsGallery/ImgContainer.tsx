@@ -11,7 +11,7 @@ import art9 from '../assets/Art6.png'
 import art12 from '../assets/Art5.png' 
 import logo from '../assets/Logo.png'
 import React from 'react'
-import Navbar from "./Navbar";
+import Navbar from "../component/Navbar";
 
 
 export default function ImgContainer() {
