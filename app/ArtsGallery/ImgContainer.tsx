@@ -20,7 +20,7 @@ export default function ImgContainer() {
   
   return (
     <div>
-      <div className="mt-10">
+      <div className="mt-40">
         <h2 className="justify-center items-center text-center text-4xl leading-tight animate-fadeIn">My Artworks</h2>
       </div>
       <div className="container mx-auto p-4 w-10/12  ">

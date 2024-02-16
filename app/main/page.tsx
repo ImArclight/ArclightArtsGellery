@@ -6,6 +6,7 @@ import Image from 'next/image'
 import logo_img from '../assets/Logo.png'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const variants = {
   hidden: {opacity: 0, x: -200, y: 0},
@@ -18,7 +19,7 @@ export default function Main() {
   return ( 
     <div>
         <Navbar />
-        <div>
+        <div> 
 
         </div>
         <br />
@@ -28,11 +29,13 @@ export default function Main() {
           animate="enter"
           transition={{delay: .5, type: 'linear'}}
         >
-          <div className="card w-52 rounded-3xl h-96 justify-center items-center m-auto ">
+          <div className="card w-52 rounded-3xl h-96 justify-center items-center ml-12 ">
             <div className='justify-center items-center p-6'>
-                <Image src={logo_img} alt=''
-                className='w-40 h-40 m-auto rounded-3xl'
-                />
+                <Link href={'/About'}>
+                  <Image src={logo_img} alt=''
+                  className='w-40 h-40 m-auto rounded-3xl hover:'
+                  />
+                </Link>
             </div>
             <br />
             <div className='text-3xl text-red-600 justify-center items-center text-center'>
