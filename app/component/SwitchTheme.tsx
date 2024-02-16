@@ -19,10 +19,10 @@ export default function SwitchTheme() {
   )
 
   if (resolvedTheme == 'dark') {
-    return <FiSun className="sun" onClick={() => setTheme('light')} />
+    return <FiSun className="sun hover:text-teal-300" onClick={() => setTheme('light')} />
   }
 
   if (resolvedTheme == 'light') {
-    return <FiMoon className="moon" onClick={() => setTheme('dark')} />
+    return <FiMoon className="moon hover:text-teal-300" onClick={() => setTheme('dark')} />
   }
 }

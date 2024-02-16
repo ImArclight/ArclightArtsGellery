@@ -16,7 +16,21 @@
   }
 } 
 
+body{
+  background-image: url('../app/assets/background.png');
+  background-repeat: no-repeat;
+  background-size: 100% 377px;
+  max-width: 100%;
+}
 
+
+.profile-card{
+  @apply dark:bg-gray-800 bg-white
+}
+
+.navbar {
+  @apply dark:bg-gray-800 bg-white
+}
 
 @layer base{
   body {
@@ -49,21 +63,18 @@ hr {
 }
 
 .moon {
-  color: white;
   width: 30px;
   height: 30px;
   margin: auto;
 }
 
 .sun {
-  color: white;
   width: 30px;
   height: 30px;
   margin: auto;
 }
 
 .moon:hover {
-  color: aliceblue;
   transform: scale(1.5);
 }
 
@@ -79,3 +90,4 @@ hr {
   margin: auto;
   text-align: center;
 }
+
