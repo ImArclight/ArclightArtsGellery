@@ -16,7 +16,7 @@ export default function SwitchTheme() {
  
   if (!mounted) return (
     <Image src={""} alt="Loading Light/Dark Toggle" width={50} height={50} sizes="50x50" title="Loading Light/Dark Toggle" priority={false} />
-  )
+  ) 
 
   if (resolvedTheme == 'dark') {
     return <FiSun className="sun hover:text-teal-300" onClick={() => setTheme('light')} />

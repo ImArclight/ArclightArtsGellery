@@ -15,15 +15,17 @@ import Navbar from "../component/Navbar";
 
 
 export default function ImgContainer() {
+
+
+  
   return (
     <div>
-      <br />
-      <div>
-        <h2 className="justify-center items-center text-center text-gray-50 text-4xl leading-tight">My Artworks</h2>
+      <div className="mt-10">
+        <h2 className="justify-center items-center text-center text-4xl leading-tight animate-fadeIn">My Artworks</h2>
       </div>
-      <div className="container mx-auto p-4 w-10/12 ">
+      <div className="container mx-auto p-4 w-10/12  ">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center text-center m-auto ">
-          <Image className="hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-3xl border-solid border-4 border-emerald-400" src={art1} alt={""} placeholder="blur" layout="responsice" />
+          <Image className="hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-3xl border-solid border-4 border-emerald-400" src={art1} alt={""} />
           <Image className="hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-3xl border-solid border-4 border-emerald-400" src={art2} alt={""} />
           <Image className="hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-3xl border-solid border-4 border-emerald-400" src={art3} alt={""} />
           <Image className="hover:scale-110 transition duration-500 cursor-pointer object-cover rounded-3xl border-solid border-4 border-emerald-400" src={art4} alt={""} />
