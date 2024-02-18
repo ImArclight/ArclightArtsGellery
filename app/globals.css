@@ -19,15 +19,19 @@
 body{
   background-image: url('../app/assets/background.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 400px;
   max-width: 100%;
+}
+
+.card1 {
+  @apply dark:bg-gray-800 bg-white;
 }
 
 
 .card{
-  @apply dark:bg-gray-800 bg-white
+  @apply dark:bg-gray-800 bg-white;
 }
-
+ 
 .navbar {
   @apply dark:bg-gray-800 bg-white
 }
@@ -89,6 +93,7 @@ hr {
 .socIcon {
   margin: auto;
   text-align: center;
+  gap: 10px;
 }
 
 
