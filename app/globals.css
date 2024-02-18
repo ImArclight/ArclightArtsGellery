@@ -19,8 +19,7 @@
 body{
   background-image: url('../app/assets/background.png');
   background-repeat: no-repeat;
-  background-size: 100% 400px;
-  max-width: 100%;
+  background-size: 100% ;
 }
 
 .card1 {

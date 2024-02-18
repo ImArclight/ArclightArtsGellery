@@ -23,7 +23,7 @@ export default function Main() {
     <div>
       <Navbar />
       <div className='md:w-11/12 m-auto md:flex gap-2'>
-        <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-40 md:w-[250px] md:min-w-[250px]">
+        <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
           <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <Link href={'/About'}>
               <div className="relative">
@@ -53,12 +53,23 @@ export default function Main() {
           animate="enter"
           exit="exit"
           transition={{delay: .2, type: 'linear'}}
+          className='flex-1'
         >
-          <div className='card relative rounded-3xl h-48 md:mr-12 md:mt-40 md:w-[800px] md:m-auto'>
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-[10px] md:min-w-[250px]'>
             <p className='mt-8 pt-8 pl-8 text-4xl font-bold'>Update</p>
-            <p className=' pl-8'>February 16 2024</p>
+            <p className='pl-8'>February 16 2024</p>
             <br />
             <p className='mx-8'>I Completely Quit <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'>Fate/Grand JP</span></Link></p>
+            <Link href={'/Others'} className=''>
+              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+            </Link>
+          </div>
+
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
+            <p className='mt-8 pt-8 pl-8 text-4xl font-bold'>Update</p>
+            <p className='pl-8'>January 31 2024</p>
+            <br />
+            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'>Persona 5 Royal</span></Link></p>
             <Link href={'/Others'} className=''>
               <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
             </Link>
