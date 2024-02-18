@@ -25,7 +25,7 @@ const variants = {
   exit: {opacity: 0, x:-200}
 }
 
-export default function Main() {
+export default function ArtsGallery() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
@@ -65,7 +65,7 @@ export default function Main() {
           className='flex-1'
         >
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-10 md:mt-40 md:min-w-[250px]'>
-            <Link href={'/ArtsGallery/Collection'} className='w-[250px] '>
+            <Link href={'/Collection'} className='w-[250px] '>
               <div>
                 <Image src={art1} alt={''} className=' absolute w-[250px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 ' />
                 <div className="absolute inset-0 w-[250px] h-[170px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 bg-black opacity-0 hover:opacity-50 transition duration-300 overflow-hidden">
@@ -73,7 +73,7 @@ export default function Main() {
                 </div>
               </div>
             </Link>
-            <Link href={'/ArtsGallery/Collection'} className=''>
+            <Link href={'/Collection'} className=''>
               <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>

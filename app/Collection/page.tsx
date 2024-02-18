@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Navbar from '@/app/component/Navbar'
-import ImgContainer from '../ImgContainer'
+import ImgContainer from '../ArtsGallery/ImgContainer'
 
 const variants = {
   hidden: {opacity: 0, x: 200}, 
