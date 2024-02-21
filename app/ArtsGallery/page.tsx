@@ -12,7 +12,8 @@ import art1 from '../assets/samp1.png'
 import art2 from '../assets/samp2.png'
 import art3 from '../assets/samp3.png'
 import { FaAddressCard } from "react-icons/fa";
-
+import dclogo from '../assets/Discord_Icon.png'
+import xlogo from '../assets/xbox-icon.png'
 
 
 const variants = {
@@ -28,33 +29,48 @@ export default function ArtsGallery() {
     <div>
       <Navbar />
       <div className='md:w-11/12 m-auto md:flex gap-5 mb-7'>
-        <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
-          <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div className='block'>
+          <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
+            <div className='p-6'>
             <Link href={'/About'}>
-              <div className="relative">
-                <Image
-                  src={logo_img}
-                  alt=''
-                  className='w-40 h-40 rounded-3xl hover m-auto justify-center overflow-hidden hover:shadow-lg transition duration-300 transform hover:scale-105'
-                />
-                <div className="absolute w-40 h-40 inset-0 rounded-3xl bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center m-auto">
-                  <p className='italic text-center m-auto text-cyan-400'>
-                    <FaAddressCard size={70} />
-                  </p>
+                <div className="relative">
+                  <Image
+                    src={logo_img}
+                    alt=''
+                    className='w-40 h-40 rounded-3xl hover m-auto justify-center overflow-hidden hover:shadow-lg transition duration-300 transform hover:scale-105'
+                  />
+                  <div className="absolute w-40 h-40 inset-0 rounded-3xl bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center m-auto">
+                    <p className='italic text-center m-auto text-cyan-400'>
+                      <FaAddressCard size={70} />
+                    </p>
+                  </div>
                 </div>
+              </Link>
+            </div>
+            <br />
+            <div className='text-3xl text-center'>
+              <p className='animate-bounce animate-infinite font-bold'>Arclight</p>
+            </div>
+            <br />
+            <div className='socIcon'>
+              <SocialIcon className='transform motion-safe:hover:scale-110 duration-200'  network='github' url='https://github.com/ImArclight' />
+              <SocialIcon className='transform motion-safe:hover:scale-110 duration-200' network='twitter' url='https://twitter.com/ImArclight' />
+              <SocialIcon className='transform motion-safe:hover:scale-110 duration-200' url='https://www.instagram.com/fsptraaaa_altern/' />
+            </div>
+          </div>
+
+          <div className="card relative rounded-3xl h-40 m-auto md:ml-12 mt-5 md:w-[250px] md:min-w-[250px]">
+              <div className='flex '>
+                <Image src={dclogo} alt={''} className='w-10 ml-9 mt-9' />
+                <p className='mt-11 ml-2 '>FeiX#7222</p>
               </div>
-            </Link>
+              <br />
+              <div className='flex'>
+                <Image src={xlogo} alt={''} className='w-10 ml-9 mb-9' />
+                <p className='mt-2 ml-2'>ImArclight7714</p>
+              </div>
           </div>
-          <br />
-          <div className='text-3xl text-center'>
-            <p className='animate-bounce animate-infinite font-bold'>Arclight</p>
-          </div>
-          <br />
-          <div className='socIcon'>
-            <SocialIcon className='transform motion-safe:hover:scale-110 duration-200'  network='github' url='https://github.com/ImArclight' />
-            <SocialIcon className='transform motion-safe:hover:scale-110 duration-200' network='twitter' url='https://twitter.com/ImArclight' />
-            <SocialIcon className='transform motion-safe:hover:scale-110 duration-200' url='https://www.instagram.com/fsptraaaa_altern/' />
-          </div>
+
         </div>
 
         <motion.main
