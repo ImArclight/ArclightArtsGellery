@@ -78,7 +78,7 @@ export default function ArtsGallery() {
             </div>
 
             <p className='absolute left-[250px]'>
-              <p className='pl-8 text-2xl font-bold mt-[12px]'>February 15 2023</p>
+              <p className='pl-8 md:text-2xl font-bold mt-[12px]'>February 15 2023</p>
               <br />
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
             </p>
@@ -101,7 +101,7 @@ export default function ArtsGallery() {
             </div>
 
             <p className='absolute left-[250px]'>
-            <p className='pl-8 text-2xl font-bold mt-[12px]'>February 15 2023</p>
+            <p className='pl-8 md:text-2xl font-bold mt-[12px]'>February 15 2023</p>
               <br />
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
             </p>
@@ -123,7 +123,7 @@ export default function ArtsGallery() {
             </div>
 
             <p className='absolute left-[250px]'>
-            <p className='pl-8 text-2xl font-bold mt-[12px]'>February 15 2023</p>
+            <p className='pl-8 md:text-2xl font-bold mt-[12px]'>February 15 2023</p>
               <br />
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
             </p>
