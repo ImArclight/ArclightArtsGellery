@@ -20,7 +20,7 @@ const variants = {
 }
 
 export default function Main() {
-  const [isHovered, setIsHovered] = useState(false)
+
 
   return (
     <div>
@@ -28,7 +28,7 @@ export default function Main() {
       <div className='md:w-11/12 m-auto md:flex gap-5 mb-7'>
         <div className='block'>
           <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
-            <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+            <div className='p-6'>
             <Link href={'/About'}>
                 <div className="relative">
                   <Image
@@ -72,58 +72,42 @@ export default function Main() {
 
         <motion.main
           variants={variants} 
+          initial="hidden"
           animate="enter"
           exit="exit"
           transition={{delay: .2, type: 'linear'}}
           className='flex-1'
         >
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-5 md:min-w-[250px]'>
-            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
-            <p className='pl-8'>February 20 2024</p>
-            <br />
-            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Persona 3 Reload</span></Link></p>
-            <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
+            <div className='flex'>
+              <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
+            </div>
+
+            
+            <Link href={'/Collection'} className='flex'>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
 
-          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
-            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
-            <p className='pl-8'>February 18 2024</p>
-            <br />
-            <p className='mx-8 mr-[60px]'>Still waiting for <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Classroom of the Elite Vol 11 2nd Year</span></Link> to be released</p>
-            <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
+            <div className='flex'>
+              <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
+            </div>
+
+           
+            <Link href={'/Collection'} className='flex'>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
 
-          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
-            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
-            <p className='pl-8'>February 16 2024</p>
-            <br />
-            <p className='mx-8'>I Completely Quit <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Fate/Grand JP</span></Link></p>
-            <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
-            </Link>
-          </div>
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
+            <div className='flex'>
+              <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
+            </div>
 
-          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
-            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
-            <p className='pl-8'>January 31 2024</p>
-            <br />
-            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Persona 5 Royal</span></Link></p>
-            <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
-            </Link>
-          </div>
-
-          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
-            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
-            <p className='pl-8'>January 19 2024</p>
-            <br />
-            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>A Piece of Blue Glass Moon</span></Link></p>
-            <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
+            
+            <Link href={'/Collection'} className='flex'>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
         </motion.main>
