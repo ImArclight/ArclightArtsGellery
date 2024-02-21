@@ -89,6 +89,16 @@ export default function Main() {
 
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
             <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
+            <p className='pl-8'>February 18 2024</p>
+            <br />
+            <p className='mx-8 mr-[60px]'>Still waiting for <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Classroom of the Elite Vol 11 2nd Year</span></Link> to be released</p>
+            <Link href={'/Others'} className=''>
+              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
+            </Link>
+          </div>
+
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
+            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
             <p className='pl-8'>February 16 2024</p>
             <br />
             <p className='mx-8'>I Completely Quit <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Fate/Grand JP</span></Link></p>
