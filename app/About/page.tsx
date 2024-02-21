@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import dclogo from '../assets/Discord_Icon.png'
 import xlogo from '../assets/xbox-icon.png'
+import { FaAddressCard } from "react-icons/fa";
 
 
 const variants = {
@@ -20,9 +21,9 @@ const variants = {
 export default function Page() {
   return (
     <div>
-      <Navbar />
-      <div className='md:w-11/12 m-auto md:flex'>
-      <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
+      <Navbar /> 
+      <div className='md:w-11/12 m-auto md:flex gap-5'>
+        <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
           <div className='p-6'>
             <Link href={'/About'}>
               <div className="relative">
@@ -31,6 +32,11 @@ export default function Page() {
                   alt=''
                   className='w-40 h-40 rounded-3xl hover m-auto justify-center overflow-hidden hover:shadow-lg transition duration-300 transform hover:scale-105'
                 />
+                <div className="absolute w-40 h-40 inset-0 rounded-3xl bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center m-auto">
+                  <p className='italic text-center m-auto text-cyan-400'>
+                    <FaAddressCard size={70} />
+                  </p>
+                </div>
               </div>
             </Link>
           </div>
@@ -46,6 +52,8 @@ export default function Page() {
           </div>
         </div>
 
+        
+
           <motion.main 
               variants={variants}
               initial="hidden"
@@ -54,12 +62,12 @@ export default function Page() {
               transition={{delay: .2, type: 'linear'}}
               className='flex-1'
             >
-            <div className='card relative rounded-3xl h-96 md:mr-12 md:mt-40 md:ml-[10px]'>
+            <div className='card relative rounded-3xl h-auto md:h-96 md:mr-12 md:mt-40 md:ml-[10px]'>
               <p className='mt-8 pt-8 pl-8 text-4xl'>About Me</p>
               <br />
-              <p className='mx-8'>Optionally, you could add media queries to make the images stack on top of each other instead of floating next to each other, on a specific screen width. But that's gonna take a whole serious problem tho even without a proper instant thing that you already learned</p>
+              <p className='mx-8'>I Love Persona 5 Royal</p>
 
-              <div className='flex'>
+              <div className='flex '>
                 <Image src={dclogo} alt={''} className='w-10 ml-8 mt-10' />
                 <p className='mt-11 ml-2'>FeiX#7222</p>
               </div>

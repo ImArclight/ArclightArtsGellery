@@ -11,12 +11,8 @@ import { CgChevronRight } from "react-icons/cg";
 import art1 from '../assets/samp1.png'
 import art2 from '../assets/samp2.png'
 import art3 from '../assets/samp3.png'
-import {
-  Ripple,
-  initTE,
-} from "tw-elements";
+import { FaAddressCard } from "react-icons/fa";
 
-initTE({ Ripple });
 
 
 const variants = {
@@ -31,7 +27,7 @@ export default function ArtsGallery() {
   return (
     <div>
       <Navbar />
-      <div className='md:w-11/12 m-auto md:flex gap-2'>
+      <div className='md:w-11/12 m-auto md:flex gap-5'>
         <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
           <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <Link href={'/About'}>
@@ -41,6 +37,11 @@ export default function ArtsGallery() {
                   alt=''
                   className='w-40 h-40 rounded-3xl hover m-auto justify-center overflow-hidden hover:shadow-lg transition duration-300 transform hover:scale-105'
                 />
+                <div className="absolute w-40 h-40 inset-0 rounded-3xl bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center m-auto">
+                  <p className='italic text-center m-auto text-cyan-400'>
+                    <FaAddressCard size={70} />
+                  </p>
+                </div>
               </div>
             </Link>
           </div>
@@ -64,17 +65,70 @@ export default function ArtsGallery() {
           transition={{delay: .2, type: 'linear'}}
           className='flex-1'
         >
-          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-10 md:mt-40 md:min-w-[250px]'>
-            <Link href={'/Collection'} className='w-[250px] '>
-              <div>
-                <Image src={art1} alt={''} className=' absolute w-[250px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 ' />
-                <div className="absolute inset-0 w-[250px] h-[170px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 bg-black opacity-0 hover:opacity-50 transition duration-300 overflow-hidden">
-                  
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-5 md:min-w-[250px]'>
+            <div className='flex'>
+              <Link href={'/Collection'} className='w-[250px] '>
+                <div>
+                  <Image src={art1} alt={''} className=' absolute w-[250px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 ' />
+                  <div className="absolute inset-0 w-[250px] h-[170px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 bg-black opacity-0 hover:opacity-50 transition duration-300 overflow-hidden">
+                    <p className='italic text-center text-cyan-400 pt-[100px]'>Young Version of Khun Maschenny Zahard</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
+            </div>
+
+            <p className='absolute left-[250px]'>
+              <p className='pl-8 text-2xl font-bold mt-[12px]'>February 15 2023</p>
+              <br />
+              <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
+            </p>
+            <Link href={'/Collection'} className='flex'>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
             </Link>
-            <Link href={'/Collection'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
+          </div>
+
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
+            <div className='flex'>
+              <Link href={'/Collection'} className='w-[250px] '>
+                <div>
+                  <Image src={art2} alt={''} className=' absolute w-[250px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 ' />
+                  <div className="absolute inset-0 w-[250px] h-[170px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 bg-black opacity-0 hover:opacity-50 transition duration-300 overflow-hidden">
+                    <p className='italic text-center text-yellow-300 pt-[100px]'>Angelina Kudou Shield</p>
+                    <p className='italic text-center text-yellow-300'>(Angie Sirius)</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <p className='absolute left-[250px]'>
+            <p className='pl-8 text-2xl font-bold mt-[12px]'>February 15 2023</p>
+              <br />
+              <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
+            </p>
+            <Link href={'/Collection'} className='flex'>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+            </Link>
+          </div>
+
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
+            <div className='flex'>
+              <Link href={'/Collection'} className='w-[250px] '>
+                <div>
+                  <Image src={art3} alt={''} className=' absolute w-[250px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 ' />
+                  <div className="absolute inset-0 w-[250px] h-[170px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 bg-black opacity-0 hover:opacity-50 transition duration-300 overflow-hidden">
+                    <p className='italic text-center text-pink-500 pt-[150px]'>Mori Calliope</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <p className='absolute left-[250px]'>
+            <p className='pl-8 text-2xl font-bold mt-[12px]'>February 15 2023</p>
+              <br />
+              <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
+            </p>
+            <Link href={'/Collection'} className='flex'>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
             </Link>
           </div>
         </motion.main>

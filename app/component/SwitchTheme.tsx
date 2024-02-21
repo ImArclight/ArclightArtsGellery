@@ -12,7 +12,7 @@ export default function SwitchTheme() {
     const [mounted, setMounted] = useState(false)
     const {setTheme, resolvedTheme} = useTheme()
 
-    useEffect(() => setMounted(true), [])
+    useEffect(() => setMounted(true), []) 
  
   if (!mounted) return (
     <Image src={""} alt="Loading Light/Dark Toggle" width={50} height={50} sizes="50x50" title="Loading Light/Dark Toggle" priority={false} />

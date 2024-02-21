@@ -67,7 +67,7 @@ export default function Navbar() {
                 <SwitchTheme />
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </nav>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
                     </li>
                     <li className=" hover:bg-gray-700 hover:text-teal-300 rounded-md px-3 py-2 text-sm font-medium">
                       <Link href={'/ArtsGallery'}>
-                        Arts Gallery
+                        Arts
                       </Link>
                     </li>
                     <li className=" hover:bg-gray-700 hover:text-teal-300 rounded-md px-3 py-2 text-sm font-medium">

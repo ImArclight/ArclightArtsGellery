@@ -10,7 +10,7 @@ const variants = {
   enter: {opacity: 1, x: 0},
   exit: {opacity: 0, x:-200}
 }
-
+ 
 export default function Collection() {
   return (
     <div>
@@ -23,7 +23,7 @@ export default function Collection() {
       transition={{delay: .2, type: 'linear'}}
     >
       <ImgContainer />
-      <br />
+      <br /> 
     </motion.main>
     </div>
     
