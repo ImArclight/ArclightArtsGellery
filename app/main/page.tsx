@@ -9,16 +9,9 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { CgChevronRight } from "react-icons/cg";
 import { FaAddressCard } from "react-icons/fa";
+import dclogo from '../assets/Discord_Icon.png'
+import xlogo from '../assets/xbox-icon.png'
 
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBRipple
-} from 'mdb-react-ui-kit';
 
 const variants = {
   hidden: {opacity: 0, x: 200}, 
@@ -32,7 +25,7 @@ export default function Main() {
   return (
     <div>
       <Navbar />
-      <div className='md:w-11/12 m-auto md:flex gap-5'>
+      <div className='md:w-11/12 m-auto md:flex gap-5 mb-7'>
         <div className='block'>
           <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
             <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
@@ -64,14 +57,21 @@ export default function Main() {
           </div>
 
           <div className="card relative rounded-3xl h-40 m-auto md:ml-12 mt-5 md:w-[250px] md:min-w-[250px]">
-            
+              <div className='flex '>
+                <Image src={dclogo} alt={''} className='w-10 ml-9 mt-9' />
+                <p className='mt-11 ml-2 '>FeiX#7222</p>
+              </div>
+              <br />
+              <div className='flex'>
+                <Image src={xlogo} alt={''} className='w-10 ml-9 mb-9' />
+                <p className='mt-2 ml-2'>ImArclight7714</p>
+              </div>
           </div>
 
         </div>
 
         <motion.main
-          variants={variants}
-          initial="hidden"
+          variants={variants} 
           animate="enter"
           exit="exit"
           transition={{delay: .2, type: 'linear'}}
@@ -79,11 +79,21 @@ export default function Main() {
         >
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-5 md:min-w-[250px]'>
             <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
+            <p className='pl-8'>February 20 2024</p>
+            <br />
+            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Persona 3 Reload</span></Link></p>
+            <Link href={'/Others'} className=''>
+              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
+            </Link>
+          </div>
+
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-[10px] md:min-w-[250px]'>
+            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
             <p className='pl-8'>February 16 2024</p>
             <br />
-            <p className='mx-8'>I Completely Quit <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'>Fate/Grand JP</span></Link></p>
+            <p className='mx-8'>I Completely Quit <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Fate/Grand JP</span></Link></p>
             <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
             </Link>
           </div>
 
@@ -91,9 +101,9 @@ export default function Main() {
             <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
             <p className='pl-8'>January 31 2024</p>
             <br />
-            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'>Persona 5 Royal</span></Link></p>
+            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Persona 5 Royal</span></Link></p>
             <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
             </Link>
           </div>
 
@@ -101,9 +111,9 @@ export default function Main() {
             <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
             <p className='pl-8'>January 19 2024</p>
             <br />
-            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'>A Piece of Blue Glass Moon</span></Link></p>
+            <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>A Piece of Blue Glass Moon</span></Link></p>
             <Link href={'/Others'} className=''>
-              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
             </Link>
           </div>
         </motion.main>

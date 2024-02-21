@@ -24,7 +24,7 @@ export default function Others() {
   return (
     <div>
       <Navbar />
-      <div className='md:w-11/12 m-auto md:flex gap-5'>
+      <div className='md:w-11/12 m-auto md:flex gap-5 mb-7'>
         <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
           <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <Link href={'/About'}>
@@ -64,34 +64,34 @@ export default function Others() {
         >
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-5 md:min-w-[250px]'>
             <div className='flex'>
-              
+              <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
             </div>
 
             
             <Link href={'/Collection'} className='flex'>
-              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
 
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
             <div className='flex'>
-              
+              <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
             </div>
 
            
             <Link href={'/Collection'} className='flex'>
-              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
 
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
             <div className='flex'>
-              
+              <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
             </div>
 
             
             <Link href={'/Collection'} className='flex'>
-              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
         </motion.main>

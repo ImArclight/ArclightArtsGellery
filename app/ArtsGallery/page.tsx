@@ -27,7 +27,7 @@ export default function ArtsGallery() {
   return (
     <div>
       <Navbar />
-      <div className='md:w-11/12 m-auto md:flex gap-5'>
+      <div className='md:w-11/12 m-auto md:flex gap-5 mb-7'>
         <div className="card relative rounded-3xl h-96 m-auto md:ml-12 mt-12 md:mt-40 md:w-[250px] md:min-w-[250px]">
           <div className='p-6' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <Link href={'/About'}>
@@ -83,7 +83,7 @@ export default function ArtsGallery() {
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
             </p>
             <Link href={'/Collection'} className='flex'>
-              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
 
@@ -106,7 +106,7 @@ export default function ArtsGallery() {
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
             </p>
             <Link href={'/Collection'} className='flex'>
-              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
 
@@ -116,7 +116,7 @@ export default function ArtsGallery() {
                 <div>
                   <Image src={art3} alt={''} className=' absolute w-[250px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 ' />
                   <div className="absolute inset-0 w-[250px] h-[170px] rounded-[6px] top-1/2 transform -translate-y-1/2 left-4 bg-black opacity-0 hover:opacity-50 transition duration-300 overflow-hidden">
-                    <p className='italic text-center text-pink-500 pt-[150px]'>Mori Calliope</p>
+                    <p className='italic text-center text-pink-500 pt-[100px]'>Mori Calliope</p>
                   </div>
                 </div>
               </Link>
@@ -128,7 +128,7 @@ export default function ArtsGallery() {
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
             </p>
             <Link href={'/Collection'} className='flex'>
-              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4'/>
+              <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
           </div>
         </motion.main>

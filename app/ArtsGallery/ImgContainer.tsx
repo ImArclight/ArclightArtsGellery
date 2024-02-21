@@ -28,8 +28,9 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art1} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 bg-black rounded-[30px] opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 bg-black rounded-[30px] opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                <p className='italic text-center text-rose-600 pt-[150px]'>Grete</p>
+                <p className='italic text-center text-rose-600'>(Daughter Dearest)</p>
               </div>
             </div>
           </Link>
@@ -37,8 +38,9 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art2} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 bg-black rounded-[30px] opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 bg-black rounded-[30px] opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                <p className='italic text-center text-violet-600 pt-[150px]'>Thea</p>
+                <p className='italic text-center text-violet-600'>Dreamspeaker</p>
               </div>
             </div>
           </Link>
@@ -46,8 +48,8 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art3} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                <p className='italic text-center text-sky-300 pt-[180px]'>Takina Inoue</p>
               </div>
             </div>
           </Link>
@@ -55,8 +57,8 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art4} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                <p className='italic text-center text-pink-300 pt-[120px]'>Mori Calliope</p>
               </div>
             </div>
           </Link>
@@ -64,8 +66,9 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art5} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300  justify-center items-center">
+                <p className='italic text-center text-yellow-300 pt-[150px]'>Angelina Kudou Shield</p>
+                <p className='italic text-center text-yellow-300'>(Angie Sirius)</p>
               </div>
             </div>
           </Link>
@@ -73,8 +76,8 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art6} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                <p className='italic text-center text-violet-400 pt-[120px]'>Arisu Sakayanagi</p>
               </div>
             </div>
           </Link>
@@ -82,8 +85,9 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art7} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                <p className='italic text-center pt-[250px] text-red-500'>W</p>
+                <p className='italic text-center text-red-500'>Arknights</p>
               </div>
             </div>
           </Link>
@@ -91,8 +95,8 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art8} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300  justify-center items-center">
+                <p className='italic text-center pt-[250px] text-red-600'>Maya Satou</p>
               </div>
             </div>
           </Link>
@@ -100,8 +104,8 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
             <div className="relative">
               <Image src={art9} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+              <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 justify-center items-center">
+                
               </div>
             </div>
           </Link>
@@ -112,8 +116,8 @@ export default function ImgContainer() {
           <Link href={'/Collection'} className=''>
               <div className="relative">
                 <Image src={art12} alt={''} className='rounded-[30px] border-solid border-4 border-emerald-400' />
-                <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300 flex justify-center items-center">
-                  <p className='italic text-center text-cyan-400'>Young Version of Khun Maschenny Zahard</p>
+                <div className="absolute inset-0 rounded-[30px] bg-black opacity-0 hover:opacity-50 transition duration-300  justify-center items-center">
+                  <p className='italic text-center text-cyan-400 pt-[250px]'>Young Version of Khun Maschenny Zahard</p>
                 </div>
               </div>
             </Link>
