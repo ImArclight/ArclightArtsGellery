@@ -56,17 +56,26 @@ export default function Others() {
             </div>
           </div>
 
-          <div className="card relative rounded-3xl h-40 m-auto md:ml-12 mt-5 md:w-[250px] md:min-w-[250px]">
-              <div className='flex '>
-                <Image src={dclogo} alt={''} className='w-10 ml-9 mt-9' />
-                <p className='mt-11 ml-2 '>FeiX#7222</p>
-              </div>
-              <br />
-              <div className='flex'>
-                <Image src={xlogo} alt={''} className='w-10 ml-9 mb-9' />
-                <p className='mt-2 ml-2'>ImArclight7714</p>
-              </div>
-          </div>
+          <motion.main
+          variants={variants}
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          transition={{delay: .2, type: 'linear'}}
+          className='flex-1'
+          >
+            <div className="card relative rounded-3xl h-40 m-auto md:ml-12 mt-5 md:w-[250px] md:min-w-[250px]">
+                <div className='flex '>
+                  <Image src={dclogo} alt={''} className='w-10 ml-9 mt-9 rounded-[10px] hover:bg-sky-400 duration-300 hover:cursor-default' />
+                  <p className='mt-11 ml-2 rounded-[10px] hover:bg-sky-400 duration-300 hover:cursor-default'>FeiX#7222</p>
+                </div>
+                <br />
+                <div className='flex'>
+                  <Image src={xlogo} alt={''} className='w-10 ml-9 mb-9 rounded-[10px] hover:bg-sky-400 duration-300 hover:cursor-default' />
+                  <p className='mt-2 ml-2 mb-11 rounded-[10px] hover:bg-sky-400 duration-300 hover:cursor-default'>ImArclight7714</p>
+                </div>
+            </div>
+          </motion.main>
 
         </div>
 
