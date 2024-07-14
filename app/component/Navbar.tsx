@@ -1,9 +1,5 @@
-'use client'
-
-import React from 'react'
 import Link from 'next/link'
 import SwitchTheme from './SwitchTheme'
-import Dark from './dark'
 import { useEffect, useState } from 'react'
  
  
@@ -13,20 +9,20 @@ export default function Navbar() {
   useEffect(() => {
       const handleScroll = () => {
           const offset = window.scrollY;
-          if (offset > 300) { // Change 100 to the desired scroll offset
+          if (offset > 300) { 
               setHideNavbar(true);
           } else {
-              setHideNavbar(false);
-          }
+              setHideNavbar(false); 
+          } 
       };
-
+  
       window.addEventListener('scroll', handleScroll);
 
       return () => {
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
-
+ 
 
   return (
     <>
@@ -44,7 +40,7 @@ export default function Navbar() {
                       <Link href={'/'}>
                         Home
                       </Link>
-                    </li>
+                    </li> 
                     <li className=" hover:bg-gray-700 hover:text-teal-300 rounded-md px-3 py-2 text-sm font-medium">
                       <Link href={'/About'}>
                         About

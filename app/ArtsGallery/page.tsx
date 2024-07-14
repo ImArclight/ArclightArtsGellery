@@ -97,11 +97,11 @@ export default function ArtsGallery() {
               </Link>
             </div>
 
-            <p className='absolute left-[250px]'>
+            {/* <p className='absolute left-[250px]'>
               <p className='pl-8 md:text-2xl font-bold mt-[12px]'>February 15 2023</p>
               <br />
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
-            </p>
+            </p> */}
             <Link href={'/Collection'} className='flex'>
               <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
@@ -120,11 +120,11 @@ export default function ArtsGallery() {
               </Link>
             </div>
 
-            <p className='absolute left-[250px]'>
+            {/* <p className='absolute left-[250px]'>
             <p className='pl-8 md:text-2xl font-bold mt-[12px]'>February 15 2023</p>
               <br />
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
-            </p>
+            </p> */}
             <Link href={'/Collection'} className='flex'>
               <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>
@@ -142,11 +142,11 @@ export default function ArtsGallery() {
               </Link>
             </div>
 
-            <p className='absolute left-[250px]'>
+            {/* <p className='absolute left-[250px]'>
             <p className='pl-8 md:text-2xl font-bold mt-[12px]'>February 15 2023</p>
               <br />
               <p className='mx-8'><Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm'></span></Link></p>
-            </p>
+            </p> */}
             <Link href={'/Collection'} className='flex'>
               <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
             </Link>

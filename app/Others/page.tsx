@@ -88,7 +88,7 @@ export default function Others() {
           className='flex-1'
         >
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-5 md:min-w-[250px]'>
-            <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
+            {/* <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Update</p>
             <p className='pl-8'>February 20 2024</p>
             <br />
             <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>Persona 3 Reload</span></Link></p>
@@ -134,8 +134,9 @@ export default function Others() {
             <p className='mx-8'>I Finished <Link href={'/Others'}><span className='text-blue-500 hover:bg-sky-400 hover:rounded-sm duration-300'>A Piece of Blue Glass Moon</span></Link></p>
             <Link href={'/Others'} className=''>
               <CgChevronRight size={70} className='absolute hover:bg-sky-400 hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300 '/>
-            </Link>
+            </Link> */}
           </div>
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'></div>
         </motion.main>
       </div>
     </div>

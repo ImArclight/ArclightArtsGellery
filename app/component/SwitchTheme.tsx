@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import Image from "next/image"
   
-
+ 
 import React from 'react'
 
 export default function SwitchTheme() {
@@ -13,7 +13,7 @@ export default function SwitchTheme() {
     const {setTheme, resolvedTheme} = useTheme()
 
     useEffect(() => setMounted(true), []) 
- 
+  
   if (!mounted) return (
     <Image src={""} alt="Loading Light/Dark Toggle" width={50} height={50} sizes="50x50" title="Loading Light/Dark Toggle" priority={false} />
   ) 

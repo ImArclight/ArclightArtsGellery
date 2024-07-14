@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import Navbar from '../component/Navbar'
 import Image from 'next/image'
 import logo_img from '../assets/Logo.png'
@@ -8,8 +7,6 @@ import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FaAddressCard } from "react-icons/fa";
-import dclogo from '../assets/Discord_Icon.png'
-import xlogo from '../assets/xbox-icon.png'
 import html from '../assets/html-icon.png'
 import css from '../assets/css-icon.png'
 import js from '../assets/js.png'
@@ -108,9 +105,9 @@ export default function Page() {
             </div>
 
             <div className='card relative rounded-3xl h-auto md:mr-12 pb-8 md:ml-[10px]'>
-              <p className='mt-8 pt-8 pl-8 text-4xl'>Language, Library, Framework, and Tools</p>
+              <p className='mt-8 mr-8 pt-8 pl-8 text-4xl'>Language, Library, Framework, and Tools</p>
               <br />
-              <div className='flex flex-wrap gap-2 ml-8 mr-8'>
+              <div className='flex flex-wrap gap-2 ml-8 mr-9'>
                 <Image src={html} alt={''} className='w-[30px] h-[30px]' />
                 <Image src={css} alt={''} className='w-[30px] h-[30px]' />
                 <Image src={js} alt={''} className='w-[30px] h-[30px]' />

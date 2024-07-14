@@ -13,7 +13,7 @@ import dclogo from '../assets/Discord_Icon.png'
 import xlogo from '../assets/xbox-icon.png'
 
 
-const variants = {
+const variants = { 
   hidden: {opacity: 0, x: 200}, 
   enter: {opacity: 1, x: 0},
   exit: {opacity: 0, x:-200}
@@ -83,7 +83,7 @@ export default function Main() {
           className='flex-1'
         >
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto md:mt-40 mt-5 md:min-w-[250px]'>
-            <div className='flex'>
+            {/* <div className='flex'>
               <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
             </div>
 
@@ -107,13 +107,15 @@ export default function Main() {
           <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'>
             <div className='flex'>
               <p className='mt-5 pt-8 pl-8 text-4xl font-bold'>Nothing to see here yet</p>
-            </div>
+            </div> */}
 
             
-            <Link href={'/Collection'} className='flex'>
+            {/* <Link href={'/Collection'} className='flex'>
               <CgChevronRight size={70} className='absolute hidden md:block md:hover:bg-sky-400 md:hover:rounded-2xl h-[120px] top-1/2 transform -translate-y-1/2 right-4 duration-300'/>
-            </Link>
+            </Link> */}
           </div>
+          <div className='card relative rounded-3xl md:mr-12 h-48 m-auto mt-5 md:min-w-[250px]'></div>
+          
         </motion.main>
       </div>
 
