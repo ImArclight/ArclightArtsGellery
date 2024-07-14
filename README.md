@@ -1,6 +1,6 @@
 <h1>Website I Re-create Using NextJs</h1>
 
-<img src="../sub/app/assets/prev.png" />
+<img src="../app/assets/prev.png" />
 
 <hr />
 
